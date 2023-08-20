@@ -1,11 +1,10 @@
 :root {
-  --primary-color: #6df7eb;
-  --secondary-color: #00182d;
+  --primary-color: #3baea0;
+  --secondary-color: #1f6f78;
 }
 
 body {
   padding-top: 50px;
-  font-family: "comfortaa";
   max-width: 1920px;
 }
 
@@ -17,6 +16,11 @@ footer {
   font-size: 24px;
   text-align: center;
   padding: 10px;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #d1d1d1;
 }
 
 i {
@@ -26,21 +30,34 @@ i {
 .footerLinks {
   font-size: 12px;
   text-align: center;
-  color: var(--secondary-color);
+  color: #d1d1d1;
 }
 
 /* landing page */
 
+.comingSoon,
+.tagline {
+  font-family: "Alata", sans-serif;
+  color: #d1d1d1;
+}
+
+.logo {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+
 h1 {
-  color: var(--primary-color) ;
-  opacity: 0.7;
+  color: var(--primary-color);
   font-size: 45px;
   text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 h2 {
   color: var(--primary-color);
-  opacity: 0.7;
   font-size: 36px;
   text-align: center;
   padding-top: 50px;
@@ -48,36 +65,53 @@ h2 {
 
 h3 {
   color: var(--primary-color);
-  opacity: 0.7;
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
   padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+p {
+  text-align: center;
 }
 
 video {
-position: fixed;
-top: 50%;
-left: 50%;
-min-width: 100%;
-min-height: 100%;
-width: auto;
-height: auto;
-z-index: -100;
--ms-transform: translateX(-50%) translateY(-50%);
--moz-transform: translateX(-50%) translateY(-50%);
--webkit-transform: translateX(-50%) translateY(-50%);
-transform: translateX(-50%) translateY(-50%);
-background: url(placeholder.jpg) no-repeat;
-background-size: cover;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(placeholder.jpg) no-repeat;
+  background-size: cover;
 }
 
+.boxOne {
+  padding-right: 100px;
+}
+.grid-columns-3 {
+  display: grid;
+  background: white;
+  grid-template-columns: 2fr 1fr;
+  padding: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 9px;
+}
 /* calculatenumbers */
 
-.calculationTitle {
-  font-size: 36px !important;
+a {
+  text-decoration: none;
+  color: #d1d1d1;
 }
 
-button.calculationResults {
+button {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   padding: 10px;
@@ -90,26 +124,14 @@ button.calculationResults {
   margin-top: 15px;
 }
 
-.numbersForm {
-  position: absolute;
-  flex-direction: column;
-  color: var(--primary-color) !important;
-  margin: 15px;
-  padding: 15px;
-  border-radius: 9px;
-  font-size: 16px;
-  text-align: center;
-  opacity: 0.9;
-}
-
 .initialCalculation {
-  background-color: white !important;
-  opacity: 0.9;
-  padding: 20px;
+  background-color: white;
+  padding: 30px;
   border-radius: 9px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   margin: 0;
+  text-align: center;
 }
 
 .calculationTitle {
@@ -136,19 +158,26 @@ button.calculationResults {
   font-size: 14px;
 }
 
-a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
 @media (max-width: 567px) {
   h1 {
-    font-size: 16px !important;
+    font-size: 20px;
   }
   h2 {
-    font-size: 12px;
+    font-size: 20px;
   }
   .calculationTitle {
-    font-size: 20px !important;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .grid-columns-3 {
+    grid-template-columns: 1fr;
+  }
+  .boxOne {
+    padding-right: 0;
+  }
+  .p2 {
+    display: none;
   }
 }
