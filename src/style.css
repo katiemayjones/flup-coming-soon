@@ -35,10 +35,10 @@ i {
 
 /* landing page */
 
-.comingSoon,
 .tagline {
   font-family: "Alata", sans-serif;
   color: #d1d1d1;
+  padding-bottom: 20px;
 }
 
 .logo {
@@ -88,7 +88,6 @@ video {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url(placeholder.jpg) no-repeat;
   background-size: cover;
 }
 
