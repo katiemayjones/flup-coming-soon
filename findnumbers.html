@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flup - find your dating destiny</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../src/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+      role="navigation"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <div class="headerLogo">
+          <a class="navbar-brand" href="../landing-page/index.html">Flup</a>
+          <!-- add logo -->
+        </div>
+
+        <!-- change navbar to toggle from right to left -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="infoLinks container-fluid">
+            <div class="row">
+              <div class="d-flex justify-content-end">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../about-us/aboutus.html"
+                      >About |</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      aria-current="page"
+                      href="../learn/learn.html"
+                      >Learn |</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="../login-signup/loginpage.html"
+                      >Login / Sign up |</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="findNumbers">
+      <div class="row">
+        <div class="col w-100 p-0">
+          <div class="d-flex justify-content-center">
+            <div class="numbersForm d-flex align-self-center">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col p-sm-3">
+                    <h2 class="calculationTitle">
+                      Let's calculate your life path number.
+                    </h2>
+                  </div>
+                  <div class="col p-sm-3">
+                    <form class="initialCalculation align-self-center">
+                      <input type="text" placeholder="First name" /><br /><br />
+                      <input
+                        type="text"
+                        placeholder="Middle name"
+                      /><br /><br />
+                      <input type="text" placeholder="Surname/s" /><br /><br />
+                      <input type="date" class="dob" id="dob" /><br /><br />
+                      <button class="submitDetails">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <p class="d-flex disclaimer">
+      To ensure the accuracy of the results, you need to input your full name,
+      not any shortened versions.<br />This information will be not saved unless
+      you choose to sign up with us.
+    </p>
+
+    <div class="containerFooter">
+      <footer class="footer">
+        <div class="footerSocial">
+          <i class="fa-brands fa-instagram"></i
+          ><i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="footerLinks">
+          <a href="../smallprint/faqs.html">FAQ</a> |
+          <a href="../smallprint/contact-us.html"> Contact Us </a>|
+          <a href="../smallprint/guidelines.html">Guidelines</a> |
+          <a href="../smallprint/terms-and-conditions.html"
+            >Terms & Conditions</a
+          >
+          | <a href="../smallprint/privacy-policy.html">Privacy Policy</a> |
+          <a href="../smallprint/manage-cookies.html"> Manage Cookies</a> |
+          <a href="../smallprint/dating-guides.html">Dating Guides</a> |
+          <a href="../smallprint/stay-safe.html">Stay Safe</a><br />
+          <i class="fa-regular fa-copyright"></i> 2023 Flup | All Rights
+          Reserved
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../src/script.js"></script>
+  </body>
+</html>

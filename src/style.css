@@ -113,7 +113,7 @@ a {
 
 button {
   background-color: var(--secondary-color);
-  color: var(--primary-color);
+  color: #d1d1d1;
   padding: 10px;
   border: var(--primary-color) 1px solid;
   border-radius: 7px;
@@ -155,7 +155,7 @@ button {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 @media (max-width: 567px) {

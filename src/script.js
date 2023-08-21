@@ -36,12 +36,17 @@ function findNumber(event) {
     sum = arrayOfNumbers.reduce((acc, num) => acc + num);
   }
 
-  let displayResults = document.querySelector(".numbersForm");
+  let displayResults = document.querySelector(".boxCalculation");
   displayResults.innerHTML = `
     <p class="calculationResults">${resultsArray[sum]}</h2><br/>
     
-    <button class="findYourMatch"><a href="/signup.html">Find your match</a></button>`;
+    <input type="email" placeholder "Enter email address"/>
+    <button class="emailResults">Email the results</button>
+    <p>In entering your email address, you agree to being kept up to date with Flup's journey.
+    
+    `;
 }
 
 let numDetails = document.querySelector(".submitDetails");
 numDetails.addEventListener("click", findNumber);
+
