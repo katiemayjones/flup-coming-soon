@@ -1,0 +1,9 @@
+let lettersOne = ["a", "j", "s"];
+let lettersTwo = ["b", "k", "t"];
+let lettersThree = ["c", "l", "u"];
+let lettersFour = ["d", "m", "v"];
+let lettersFive = ["e", "n", "w"];
+let lettersSix = ["f", "o", "x"];
+let lettersSeven = ["g", "p", "y"];
+let lettersEight = ["h", "q", "z"];
+let lettersNine = ["i", "r"];

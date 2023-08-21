@@ -1,17 +1,17 @@
 // 26.11.1990           20.03.1987          07.08.1993
 let resultsArray = [
   "",
-  "Your lifepath number is one.",
-  "Your lifepath number is two. Individuals with a Life Path Number of 2 embody the essence of peace and harmony. Guided by their emotional depth and genuine empathy, they hold a compassionate space for those around them. Their reserved and conservative nature reflects their thoughtful approach to life, often considering each step with care. However, these attributes of the Life Path Number 2 carry dual potentials – an advantage and a challenge – contingent on how they channel these inherent qualities.",
-  "Your lifepath number is three.",
-  "Your lifepath number is four.",
-  "Your lifepath number is five.",
-  "Your lifepath number is six.",
-  "Your lifepath number is seven.",
-  "Your lifepath number is eight.",
-  "Your lifepath number is nine.",
+  "One",
+  "Two",
+  "Three",
+  "Four",
+  "Five",
+  "Six",
+  "Seven",
+  "Eight",
+  "Nine",
   "",
-  "Your lifepath number is eleven.",
+  "Eleven",
 ];
 
 function findLifeLesson(event) {
@@ -34,25 +34,17 @@ function findLifeLesson(event) {
   let displayResults = document.querySelector(".boxCalculation");
 
   displayResults.innerHTML = `
-      <p class="calculationResults">${resultsArray[sum]}</h2><br/>
+      <p class="calculationResults">Your life lesson number is ${resultsArray[sum]}</h2><br/>
       <input type="email" placeholder="Enter email address"/>
       <button class="emailResults">Email the results</button>
       <p>In entering your email address, you agree to being kept up to date with Flup's journey.</p>
     `;
 }
 
-
 let numDetails = document.querySelector(".submitDetails");
 numDetails.addEventListener("click", findLifeLesson);
 
-let lettersOne = ["a", "j", "s"];
-let lettersTwo = ["b", "k", "t"];
-let lettersThree = ["c", "l", "u"];
-let lettersFour = ["d", "m", "v"];
-let lettersFive = ["e", "n", "w"];
-let lettersSix = ["f", "o", "x"];
-let lettersSeven = ["g", "p", "y"];
-let lettersEight = ["h", "q", "z"];
-let lettersNine = ["i", "r"];
+//if someone is 37 in date of birth, then it is 37/1
+//78 is the maximum number
 
 // Melanie Mae Clarke65
