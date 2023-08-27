@@ -4,8 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Results - Flup numerology calculator</title>
+    <link rel="icon" type="image/x-icon" href="/test-graphics/favicon.ico" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <header class="hero">
+      <a href="index.html>"> <i class="fa-solid fa-house homeLink"></i></a>
+      <section id="#main" class="video">
+        <video
+          src="/test-graphics/starrynight.mp4"
+          playsinline
+          muted
+          autoplay
+          loop
+        ></video>
+      </section>
+      <img
+        src="test-graphics/FlupLogoNoBack.png"
+        class="logo"
+        alt="Flup logo and brand name"
+      />
+
+      <h2 class="tagline">Your personalised results</h2>
+    </header>
+    <div class="grid-columns-2" id="results-box">
+      <div class="box"><h3>Life Lesson</h3></div>
+      <div class="box"><h3>Soul Number</h3></div>
+      <div class="box"><h3>Outer personality</h3></div>
+      <div class="box"><h3>Path of destiny</h3></div>
+      <div class="box"><h3>Personal Month</h3></div>
+      <div class="box"><h3>Personal Year</h3></div>
+      <div class="box"><h3>Significance of first vowel</h3></div>
+    </div>
+
+    <div class="signUp">
+      <h3>
+        To receive more detailed results, please enter your details below.
+      </h3>
+      <form class="align-self-center">
+        <input type="text" placeholder="First name" /><br /><br />
+        <input type="text" placeholder="Middle name" /><br /><br />
+        <input type="text" placeholder="Surname/s" /><br /><br />
+        <input type="email" placeholder="Email address" /><br /><br />
+        <input type="date" class="dob" id="dob" /><br /><br />
+        <button class="submitDetails">Submit</button>
+      </form>
+      <br />
+      <p class="disclaimer">
+        By clicking submit, you agree to Flup's
+        <a href="../privacyPolicy.html"> Privacy Policy</a> and
+        <a href="../terms.html">Terms of Use</a>
+      </p>
+    </div>
     <div class="containerFooter">
       <footer class="footer">
         <a href="https://www.instagram.com/flupsite/"
