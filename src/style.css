@@ -9,8 +9,10 @@ body {
   font-family: "Alata", sans-serif;
 }
 
-[data-bs-theme="dark"] {
-  background: linear-gradient(to left, #18191a 0%, #000203 100%) !important;
+[data-bs-theme="light"] {
+  background: rgb(59, 111, 120, 0.9) !important;
+  padding: 5px;
+  font-size: 20px;
 }
 
 footer {
@@ -35,6 +37,11 @@ i {
   left: 0;
 }
 
+.language {
+  font-size: 16px;
+  display: block;
+}
+
 .footerLinks {
   font-size: 12px;
   text-align: center;
@@ -54,6 +61,7 @@ i {
   display: block;
   margin: 0 auto;
   opacity: 0.8;
+  margin-top: 80px;
 }
 
 h1 {
@@ -171,6 +179,10 @@ form {
   width: auto;
   display: block;
   margin: auto;
+}
+
+li {
+  list-style: none;
 }
 
 .disclaimer {
