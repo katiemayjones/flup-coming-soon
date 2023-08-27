@@ -6,6 +6,7 @@
 body {
   padding-top: 50px;
   max-width: 1920px;
+  font-family: "Alata", sans-serif;
 }
 
 [data-bs-theme="dark"] {
@@ -25,6 +26,13 @@ footer {
 
 i {
   padding: 10px;
+}
+
+.homeLink {
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .footerLinks {
@@ -73,6 +81,8 @@ h3 {
 
 p {
   text-align: center;
+  color: #18191a;
+  font-size: 16px;
 }
 
 video {
@@ -96,18 +106,45 @@ video {
 }
 .grid-columns-3 {
   display: grid;
-  background: white;
+  background: rgb(255, 255, 255, 0.9);
   grid-template-columns: 2fr 1fr;
   padding: 50px;
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 9px;
 }
+
+.grid-columns-2 {
+  display: grid;
+  background: rgb(255, 255, 255, 0.9);
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 9px;
+}
+
+.signUp {
+  background: rgb(255, 255, 255, 0.9);
+  padding: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 9px;
+  text-align: center;
+}
+
 /* calculatenumbers */
 
 a {
   text-decoration: none;
   color: #d1d1d1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a:hover {
+  color: var(--primary-color);
 }
 
 button {
@@ -116,14 +153,14 @@ button {
   padding: 10px;
   border: var(--primary-color) 1px solid;
   border-radius: 7px;
-  font-size: 12px;
+  font-size: 14px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   margin: 0 auto;
   margin-top: 15px;
 }
 
-.initialCalculation {
+form {
   background-color: white;
   padding: 30px;
   border-radius: 9px;
@@ -131,16 +168,9 @@ button {
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   margin: 0;
   text-align: center;
-}
-
-.calculationTitle {
-  font-size: 36px;
-  opacity: 0.9;
-  padding-top: 50px;
-}
-
-.calculationResults {
-  font-size: 16px;
+  width: auto;
+  display: block;
+  margin: auto;
 }
 
 .disclaimer {
@@ -167,10 +197,16 @@ button {
   .calculationTitle {
     font-size: 20px;
   }
+  form {
+    width: fit-content;
+  }
 }
 
 @media (max-width: 1000px) {
   .grid-columns-3 {
+    grid-template-columns: 1fr;
+  }
+  .grid-columns-2 {
     grid-template-columns: 1fr;
   }
   .boxOne {
@@ -178,5 +214,15 @@ button {
   }
   .p2 {
     display: none;
+  }
+
+  p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 567px) {
+  form {
+    width: 400px;
   }
 }
