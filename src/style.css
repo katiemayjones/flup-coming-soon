@@ -10,9 +10,13 @@ body {
 }
 
 [data-bs-theme="light"] {
-  background: rgb(59, 111, 120, 0.9) !important;
+  background: rgb(59, 111, 120, 0.8) !important;
   padding: 5px;
   font-size: 20px;
+  color: #d1d1d1;
+}
+[data-bs-theme="light"] a {
+  color: #d1d1d1;
 }
 
 footer {
@@ -111,6 +115,17 @@ video {
 
 .boxOne {
   padding-right: 100px;
+}
+
+.termsContainer {
+  background: rgb(255, 255, 255, 0.9);
+  grid-template-columns: 2fr 1fr;
+  padding: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 9px;
+  text-align: center;;
+
 }
 .grid-columns-3 {
   display: grid;
