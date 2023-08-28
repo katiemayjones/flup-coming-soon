@@ -119,13 +119,15 @@ video {
 
 .termsContainer {
   background: rgb(255, 255, 255, 0.9);
-  grid-template-columns: 2fr 1fr;
-  padding: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
   border-radius: 9px;
-  text-align: center;;
-
+  text-align: center;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
 }
 .grid-columns-3 {
   display: grid;
